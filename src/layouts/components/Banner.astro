@@ -1,43 +1,77 @@
 ---
-import { markdownify } from "@/lib/utils/textConverter";
-import { Image } from "astro:assets";
+// src/pages/swiper.astro
 const { banner } = Astro.props;
-const { title, button, image, content } = banner;
+const { images } = banner;
 ---
+<style>
+  /* 修改箭頭顏色為白色並加大 */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white;
+    font-size: 30px; /* 调整箭头大小 */
+  }
 
-<section class="section banner relative">
-  <div class="container">
-    <div class="row items-center">
-      <div class="lg:col-6">
-        <h1 class="banner-title" set:html={markdownify(title)} />
+  /* 修改點點顏色為白色並加大 */
+  .swiper-pagination-bullet {
+    background: white;
+    width: 16px; /* 调整点点的宽度 */
+    height: 16px; /* 调整点点的高度 */
+  }
 
-        <p class="mt-6" set:html={markdownify(content)} />
+  /* 点点在活动状态下的大小和颜色 */
+  .swiper-pagination-bullet-active {
+    background: white;
+    width: 20px; /* 活动状态下的点点宽度 */
+    height: 20px; /* 活动状态下的点点高度 */
+  }
+  
+  /* 通过root变量来设置颜色 */
+  :root {
+    --swiper-navigation-color: white;
+    --swiper-pagination-color: white;
+  }
+</style>
 
-        {
-          button.enable && (
-            <a class="btn btn-white mt-8" href={button.link}>
-              {button.label}
-            </a>
-          )
-        }
-      </div>
-      <div class="lg:col-6">
-        <Image
-          class="w-full object-contain"
-          alt="banner"
-          src={image}
-          width={603}
-          height={396}
+
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    {images.map((image, index) => (
+      <div class="swiper-slide" key={index}>
+        <img 
+          class="w-full object-cover"
+          alt={`banner-${index}`}
+          src={image.src} 
         />
       </div>
-    </div>
+    ))}
   </div>
 
-  <Image
-    class="banner-shape absolute -top-28 right-0 -z-[1] w-full max-w-[30%]"
-    alt="banner"
-    src="/images/banner-shape.png"
-    width={496}
-    height={466}
-  />
-</section>
+  <!-- 如果需要分頁導航按鈕或圓點分頁，可以添加以下結構 -->
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+<!-- 引入 Swiper 的 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+<!-- 引入 Swiper 的 JS 文件 -->
+<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- 初始化 Swiper -->
+<script is:inline>
+  new Swiper('.swiper-container', {
+    loop: true,  // 設置輪播循環
+    autoplay: {
+      delay: 3000,  // 自動播放延遲時間
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,  // 啟用點擊分頁
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',  // 下一頁按鈕
+      prevEl: '.swiper-button-prev',  // 上一頁按鈕
+    },
+  });
+</script>

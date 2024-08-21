@@ -18,13 +18,14 @@
   },
 
   "call_to_action": {
-    "title": "Helping teams in the world with focus",
-    "description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "title": "Empowering Your Musical Journey",
+    "description": "Discover the perfect blend of creativity and expertise with our tailored music courses and professional guidance.",
     "button": {
-      "label": "Download The Theme",
-      "link": "https://themefisher.com/astro-themes/pinwheel-astro"
+      "label": "Explore Our Courses",
+      "link": "https://"
     }
   },
+
 
   "disqus": {
     "enable": true,

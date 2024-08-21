@@ -12,6 +12,18 @@ banner:
     enable: true
 
 ##key features
+environment:
+  title: "The Highlighting Part Of Our Solution"
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  feature_list:
+    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
+      title: Live Caption
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
+      title: Smart Reply
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      
+##key features
 key_features:
   title: "The Highlighting Part Of Our Solution"
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.

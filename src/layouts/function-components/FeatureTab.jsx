@@ -12,7 +12,7 @@ const FeatureTab = ({ feature_tab }) => {
           }}
         />
       </div>
-      <div className="lg:col-6">
+      <div className="lg:col-6 justify-center">
         {feature_tab.list.map((item, index) => (
           <div
             key={`item-${index}`}
@@ -20,7 +20,7 @@ const FeatureTab = ({ feature_tab }) => {
               tab === index ? "active" : undefined
             } relative`}
           >
-            <img className="w-full object-contain" src={item.image} />
+            <img className="w-[80%] object-contain mx-auto" src={item.image} />
           </div>
         ))}
       </div>

@@ -11,18 +11,20 @@ banner:
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
     enable: true
 
-##key features
 environment:
-  title: "The Highlighting Part Of Our Solution"
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
-  feature_list:
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      
+  title: 提供最完善的音樂俱樂部環境，<br /> 助您發揮音樂潛能
+  list:
+    - title: 專業錄音設備與舒適空間
+      content: 我們的錄音室配備了先進的錄音設備，為您提供最佳的錄音體驗，無論是錄製專輯還是練習演奏，都能滿足您的需求。
+      image: "/images/environment/env-img-1.png"
+    - title: 完美融合的教學與創作區域
+      content: 教學空間與創作區域無縫結合，讓您在學習的同時可以即時創作和錄音，充分發揮您的音樂靈感。
+      image: "/images/environment/env-img-2.png"
+    - title: 舒適的休息區與交流空間
+      content: 我們的俱樂部提供寬敞的休息區，讓您在練習和創作之餘，能夠放鬆心情，並與其他音樂人交流心得。
+      image: "/images/environment/env-img-3.png"
+
+
 ##key features
 key_features:
   title: "The Highlighting Part Of Our Solution"
@@ -105,7 +107,7 @@ service:
 
 #testimonial
 testimonial:
-  title: Our customers have nice things to say about us
+  title: 師資介紹
   description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
   testimonial_list:
     - author: David Cameron

@@ -5,12 +5,12 @@
       "url": "/"
     },
     {
-      "name": "About",
-      "url": "/about"
+      "name": "教學特色",
+      "url": "/"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
+      "name": "俱樂部特色",
+      "url": "/#service"
     },
     {
       "name": "Features",

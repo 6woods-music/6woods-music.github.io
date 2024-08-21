@@ -50,7 +50,7 @@ key_features:
 #service
 service:
   homepage_tab:
-    title: Prevent failure from to impacting your reputation
+    title: 多元選擇、大師講座
     description: Our platform helps you build secure onboarding authentication experiences that retain and engage your users. We build the infrastructure, you can.
     tab_list:
         - title: Habit building essential choose habit
@@ -64,22 +64,32 @@ service:
           image: "/images/sells-by-country.png"
 
   our_service:
-    - title: Accept payments any country in this whole universe
-      desctiption: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-      image: "/images/collaboration.png"
-      list:
-        - Supporting more than 119 country world
-        - Open transaction with more than currencies
-        - Customer Service with 79 languages
-    - title: Accountability that works for you
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
-      video:
-        thumbnail: "/images/intro-thumbnail.png"
-        video_id: "g3-VxLQO7do"
-      button:
-        label: Know About Us
-        link: "#"
-        enable: true
+      - title: 多元選擇、大師講座
+        description: 提供多種選擇及專業大師講座，讓您在音樂領域中更進一步。
+        image: "/images/music_room.png"
+        list:
+          - 提供不同音樂風格的課程選擇
+          - 定期邀請業界大師進行專題講座
+          - 小班制教學，確保每位學員的學習效果
+      - title: 同樣費用、數倍課量
+        description: 我們以相同的費用提供更多的課程內容，讓您學習更有效率。
+        image: "/images/music_course.png"
+      - title: 標準化數位課程設計
+        description: 提供標準化的數位課程設計，讓您更輕鬆學習。
+        image: "/images/music_room.png"
+        list:
+          - 課程內容清晰有條理，易於理解
+          - 課程設計符合現代音樂教育的標準
+          - 提供可下載的課程資料供隨時複習
+      - title: 資深業界專業人士
+        description: 我們的團隊由資深業界專業人士組成，為您提供最專業的教學內容。
+        video:
+          thumbnail: "/images/intro-thumbnail.png"
+          video_id: "g3-VxLQO7do"
+        button:
+          label: 了解我們
+          link: "#"
+          enable: true
 
 #testimonial
 testimonial:

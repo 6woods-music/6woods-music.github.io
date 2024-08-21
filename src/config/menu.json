@@ -5,6 +5,10 @@
       "url": "/"
     },
     {
+      "name": "師資介紹",
+      "url": "/"
+    },
+    {
       "name": "教學特色",
       "url": "/"
     },
@@ -13,53 +17,11 @@
       "url": "/#service"
     },
     {
-      "name": "Features",
+      "name": "會員方案介紹",
       "url": "/features"
     },
     {
-      "name": "How It Works",
-      "url": "/how-it-works"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Career",
-          "url": "/career"
-        },
-
-        {
-          "name": "Integrations",
-          "url": "/integrations"
-        },
-
-        {
-          "name": "Pricing",
-          "url": "/pricing"
-        },
-        {
-          "name": "Sign In",
-          "url": "/signin"
-        },
-
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Changelog",
-          "url": "/changelog"
-        },
-        {
-          "name": "Terms And Conditions",
-          "url": "/terms-and-conditions"
-        }
-      ]
-    },
-    {
-      "name": "Contact",
+      "name": "聯絡方式",
       "url": "/contact"
     }
   ],

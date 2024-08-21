@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Pinwheel Astro",
-    "base_url": "https://pinwheel-astro.vercel.app",
+    "title": "6WOODS",
+    "base_url": "https://6woods-music.github.io/",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
-    "logo_width": "147",
-    "logo_height": "31",
-    "logo_text": "Pinwheel"
+    "logo_width": "128",
+    "logo_height": "66",
+    "logo_text": "6WOODS"
   },
 
   "settings": {
@@ -22,7 +22,7 @@
     "description": "Discover the perfect blend of creativity and expertise with our tailored music courses and professional guidance.",
     "button": {
       "label": "Explore Our Courses",
-      "link": "https://"
+      "link": "https://6woods-music.github.io/"
     }
   },
 
@@ -45,6 +45,6 @@
   "metadata": {
     "meta_author": "Themefisher",
     "meta_image": "/images/og-image.png",
-    "meta_description": "pinwheel astro"
+    "meta_description": "6WOODS MUSIC"
   }
 }

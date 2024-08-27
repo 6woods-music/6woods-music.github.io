@@ -6,11 +6,11 @@
     },
     {
       "name": "師資介紹",
-      "url": "/"
+      "url": "/#reviews"
     },
     {
       "name": "教學特色",
-      "url": "/"
+      "url": "/#key-feature"
     },
     {
       "name": "俱樂部特色",
@@ -22,7 +22,7 @@
     },
     {
       "name": "聯絡方式",
-      "url": "/contact"
+      "url": "/#footer"
     }
   ],
 

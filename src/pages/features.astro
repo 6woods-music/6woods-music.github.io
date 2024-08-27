@@ -9,14 +9,75 @@ import { getEntryBySlug } from "astro:content";
 const features = await getEntryBySlug("features", "index");
 ---
 
-<Base
-  title={features.data.title}
-  meta_title={features.data.meta_title}
-  description={features.data.description}
-  image={features.data.image}
->
-  <Shape />
-  <FeatureBanner features={features.data} />
-  <ProjecManagement features={features.data} />
-  <Cta />
-</Base>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員方案表格</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .explanation {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>購買單月點數</th>
+            <th>每月點數</th>
+            <th>會費定價(1個月)</th>
+            <th>3個月</th>
+            <th>6個月</th>
+            <th>12個月</th>
+        </tr>
+        <tr>
+            <td>初階會員</td>
+            <td>36點</td>
+            <td>3600</td>
+            <td>2788</td>
+            <td>2688</td>
+            <td>2588</td>
+        </tr>
+        <tr>
+            <td>高級會員</td>
+            <td>42點</td>
+            <td>3900</td>
+            <td>2988</td>
+            <td>2888</td>
+            <td>2788</td>
+        </tr>
+        <tr>
+            <td>深度會員</td>
+            <td>48點</td>
+            <td>4200</td>
+            <td>3088</td>
+            <td>2988</td>
+            <td>2888</td>
+        </tr>
+    </table>
+
+    <div class="explanation">
+        <p>初階會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <p>高級會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <p>深度會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <p>其他說明：</p>
+        <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+    </div>
+</body>
+</html>

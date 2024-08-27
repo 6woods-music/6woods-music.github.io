@@ -5,11 +5,12 @@ import Environment from "@/components/Environment.astro";;
 import KeyFeatures from "@/layouts/components/KeyFeatures.astro";
 import Testimonial from "@/layouts/components/Testimonial.astro";
 import Service from "@/layouts/components/Service.astro";
+import Pricing from "@/components/Pricing.astro";
 import Cta from "@/layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 
 const homepage = await getEntryBySlug("homepage", "index");
-const { banner, environment, key_features, service, testimonial } = homepage.data;
+const { banner, environment, key_features, service, testimonial, pricing} = homepage.data;
 ---
 
 <Base>
@@ -23,6 +24,8 @@ const { banner, environment, key_features, service, testimonial } = homepage.dat
   <KeyFeatures key_features={key_features} />
   <!-- service -->
   <Service service={service} />
+  <!-- pricing -->
+  <Pricing pricing={pricing} />
   <!-- call to action -->
   <Cta />
 </Base>

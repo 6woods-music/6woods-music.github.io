@@ -155,4 +155,10 @@ testimonial:
       organization: meta limited
       rating: five
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
+
+
+##pricing
+pricing:
+  title: "會員方案"
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
 ---

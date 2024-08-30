@@ -3,11 +3,23 @@ import HomepageTab from "@/layouts/function-components/HomepageTab";
 import VideoComponent from "@/layouts/function-components/VideoComponent";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { Image } from "astro:assets";
+import { markdownify } from "@/lib/utils/textConverter";
+
 const { service } = Astro.props;
-const { homepage_tab, our_service } = service;
+const { homepage_tab, our_service, title, description } = service;
 ---
+
 <section class="section services" id="service">
   <div class="container">
+    <div class="row justify-between text-center lg:text-start mb-8">
+      <div class="lg:col-5">
+        <h2 set:html={markdownify(title)} />
+      </div>
+      <div class="mt-6 lg:col-5 lg:mt-0">
+        <p set:html={markdownify(description)} />
+      </div>
+    </div>
+
     <!-- <HomepageTab client:load homepage_tab={homepage_tab} /> -->
     {
       our_service.map((item: any, index: number) => (

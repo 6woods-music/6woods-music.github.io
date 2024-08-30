@@ -15,3 +15,17 @@
 @layer utilities {
   @import "utilities";
 }
+
+/* 添加额外的全局样式 */
+@layer base {
+  #app, main, .container, .wrapper {
+    @apply w-full max-w-full overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .safe-padding {
+    padding-left: max(env(safe-area-inset-left), 1rem);
+    padding-right: max(env(safe-area-inset-right), 1rem);
+  }
+}

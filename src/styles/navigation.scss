@@ -14,6 +14,13 @@ input#nav-toggle:checked ~ #nav-menu {
 .header {
   @apply sticky top-0 z-50 py-6 transition-all duration-300 lg:bg-transparent;
   background-color: rgb(249, 242, 233); /* 修改為指定的 RGB 顏色 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  width: 100%;
 
   &-sticky {
     @apply shadow;
@@ -21,6 +28,15 @@ input#nav-toggle:checked ~ #nav-menu {
   }
 }
 
+.header-sticky {
+  background-color: rgb(249, 242, 233);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+body {
+  padding-top: 90px;
+}
 // .header {
 //   @apply sticky top-0 z-50  bg-white py-6 transition-all duration-300 lg:bg-transparent;
 

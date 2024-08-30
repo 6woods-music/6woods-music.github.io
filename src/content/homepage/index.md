@@ -63,6 +63,8 @@ key_features:
 
 #service
 service:
+  title: 俱樂部特色
+  description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   homepage_tab:
     title: 多元選擇、大師講座
     description: Our platform helps you build secure onboarding authentication experiences that retain and engage your users. We build the infrastructure, you can.

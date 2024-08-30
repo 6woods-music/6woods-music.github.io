@@ -1,9 +1,8 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
-import { Image } from "astro:assets";
-import HomapageFeature from "@/layouts/function-components/HomapageFeature";
+
 const { pricing } = Astro.props;
-const { title, description } = pricing;
+const { title, description, pricing_table, pricing_explanations } = pricing;
 ---
 
 <section class="section pricing" id="pricing">
@@ -20,132 +19,35 @@ const { title, description } = pricing;
 
   <div class="row mt-[30px] items-center">
     <div class="col-8 mx-auto mb-10 text-center">
-      <table
-        style="border-collapse: collapse; width: 100%; max-width: 1200px; margin: 0 auto; font-weight: bold;"
-      >
+      <table style="border-collapse: collapse; width: 100%; max-width: 1200px; margin: 0 auto; font-weight: bold;">
         <tr>
-          <th
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >購買單月點數</th
-          >
-          <th
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >每月點數</th
-          >
-          <th
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >會費定價(1個月)</th
-          >
-          <th
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >3個月</th
-          >
-          <th
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >6個月</th
-          >
-          <th
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >12個月</th
-          >
+          {pricing_table.headers.map((header) => (
+            <th style="border: 2px solid black; padding: 8px; background-color: white;">{header}</th>
+          ))}
         </tr>
-        <tr>
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >初階會員</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >36點</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >3600</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >2788</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >2688</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >2588</td
-          >
-        </tr>
-        <tr>
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >高級會員</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >42點</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >3900</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >2988</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >2888</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >2788</td
-          >
-        </tr>
-        <tr>
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >深度會員</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >48點</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >4200</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >3088</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >2988</td
-          >
-          <td
-            style="border: 2px solid black; padding: 8px; background-color: white;"
-            >2888</td
-          >
-        </tr>
+        {pricing_table.rows.map((row) => (
+          <tr>
+            {row.map((cell) => (
+              <td style="border: 2px solid black; padding: 8px; background-color: white;">{cell}</td>
+            ))}
+          </tr>
+        ))}
       </table>
 
-      <div
-        class="explanation"
-        style="max-width: 800px; margin: 20px auto; text-align: left; font-weight: normal; display: flex; flex-wrap: wrap;"
-      >
+      <div class="explanation" style="max-width: 800px; margin: 20px auto; text-align: left; font-weight: normal; display: flex; flex-wrap: wrap;">
         <div class="explanation-left" style="width: 50%;">
-          <p>初階會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-          <p>高級會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-          <p>深度會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          {pricing_explanations.left.map((explanation) => (
+            <p>{explanation}</p>
+          ))}
         </div>
         <div class="explanation-right" style="width: 50%;">
-          <p>其他說明：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-          <p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          {pricing_explanations.right.map((explanation) => (
+            <p>{explanation}</p>
+          ))}
         </div>
       </div>
 
       <style>
-        /* 媒體查詢：螢幕寬度小於768px時，改變佈局 */
         @media (max-width: 768px) {
           .explanation {
             flex-direction: column;

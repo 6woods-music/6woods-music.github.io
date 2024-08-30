@@ -157,8 +157,30 @@ testimonial:
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
 
 
-##pricing
+
 pricing:
-  title: "會員方案"
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  title: "定價方案"
+  description: "選擇適合你的會員方案"
+  pricing_table:
+    headers:
+      - "購買單月點數"
+      - "每月點數"
+      - "會費定價(1個月)"
+      - "3個月"
+      - "6個月"
+      - "12個月"
+    rows:
+      - ["初階會員", "36點", "3600", "2788", "2688", "2588"]
+      - ["高級會員", "42點", "3900", "2988", "2888", "2788"]
+      - ["深度會員", "48點", "4200", "3088", "2988", "2888"]
+  pricing_explanations:
+    left:
+      - "初階會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX"
+      - "高級會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX"
+      - "深度會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX"
+    right:
+      - "其他說明：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      - "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+
 ---

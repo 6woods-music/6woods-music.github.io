@@ -18,6 +18,12 @@ const { main }: { main: NavigationLink[] } = menu;
 const { pathname } = Astro.url;
 ---
 
+<style>
+  section[id] {
+    scroll-margin-top: 20px; /* 一个小的固定值 */
+  }
+</style>
+
 <header class="header">
   <nav class="navbar container">
     <!-- logo -->
@@ -111,23 +117,29 @@ const { pathname } = Astro.url;
         ))
       }
       <li class="nav-item mt-2 lg:hidden">
-        <a class="btn btn-white btn-sm border-border" href="https://line.me/tw/">
+        <a
+          class="btn btn-white btn-sm border-border"
+          href="https://line.me/tw/"
+        >
           預約體驗（LINE）</a
         >
       </li>
     </ul>
     <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="https://line.me/tw/"> 預約體驗（LINE）</a>
+      <a class="btn btn-white btn-sm" href="https://line.me/tw/">
+        預約體驗（LINE）</a
+      >
     </div>
   </nav>
 </header>
 
+<script is:inline src="/js/scrollAdjuster.js"></script>
 <script is:inline>
   document.querySelectorAll(".dropdown-button").forEach((button) => {
     button.addEventListener("click", (e) => {
       const dropdown = e.target.nextElementSibling;
       dropdown.classList.toggle(
-        dropdown.style === "hidden" ? "block" : "hidden"
+        dropdown.style === "hidden" ? "block" : "hidden",
       );
     });
   });
@@ -143,4 +155,6 @@ const { pathname } = Astro.url;
       }
     });
   });
+
+  initScrollAdjuster();
 </script>

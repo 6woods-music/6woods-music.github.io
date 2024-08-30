@@ -4,7 +4,7 @@ import { useState } from "react";
 const FeatureTab = ({ feature_tab }) => {
   const [tab, setTab] = useState(0);
   return (
-    <div className="row mt-[120px] items-center">
+    <div className="row mt-[40px] items-center">
       <div className="col-8 mx-auto mb-10 text-center">
         <h2
           dangerouslySetInnerHTML={{

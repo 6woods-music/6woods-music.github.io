@@ -5,6 +5,7 @@ import config from "@/config/config.json";
 import menu from "@/config/menu.json";
 import social from "@/config/social.json";
 import { markdownify } from "@/lib/utils/textConverter";
+
 const { footer } = menu;
 const { copyright, location, email, phone, footer_description } = config.params;
 ---
@@ -12,17 +13,19 @@ const { copyright, location, email, phone, footer_description } = config.params;
 <footer class="footer bg-[#F1F1F1]" id="footer">
   <div class="container">
     <div class="gx-5 row pb-10 pt-[52px]">
-      <div class="col-12 mt-12 md:col-4 lg:col-4">
-        <Logo />
-        <p class="mt-6">
+      <div class="footer-column col-12 mt-12 md:col-4 lg:col-4">
+        <div class="logo-wrapper">
+          <Logo />
+        </div>
+        <p class="mt-6 footer-description">
           {footer_description}
         </p>
       </div>
-      <div class="col-12 mt-12 md:col-4 lg:col-4">
+      <div class="footer-column col-12 mt-12 md:col-4 lg:col-4">
         <h6>Socials</h6>
         <Social source={social} className="social-icons mt-4 lg:mt-6" />
       </div>
-      <div class="col-12 mt-12 md:col-4 lg:col-4">
+      <div class="footer-column col-12 mt-12 md:col-4 lg:col-4">
         <h6>Location & Contact</h6>
         <ul>
           <li class="mb-2">{location}</li>
@@ -40,7 +43,7 @@ const { copyright, location, email, phone, footer_description } = config.params;
       </div>
     </div>
   </div>
-  
+   
   <div class="container max-w-[1440px]">
     <div
       class="footer-copyright mx-auto border-t border-border pb-10 pt-7 text-center"
@@ -49,3 +52,33 @@ const { copyright, location, email, phone, footer_description } = config.params;
     </div>
   </div>
 </footer>
+
+<style>
+  @media (max-width: 768px) {
+    .footer-column {
+      text-align: center;
+    }
+    
+    .footer-column ul {
+      padding-left: 0;
+    }
+    
+    .footer-column li {
+      list-style-type: none;
+    }
+    
+    .social-icons {
+      justify-content: center;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-description {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+</style>

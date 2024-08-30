@@ -82,8 +82,10 @@ const { images } = banner;
       bottom: 10px !important;
     }
   }
+  section[id] {
+    scroll-margin-top: 20px; /* 一个小的固定值 */
+  }
 </style>
-
 <div class="swiper-wrapper-container">
   <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -113,6 +115,9 @@ const { images } = banner;
   is:inline
   src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+<!-- 引入滚动调整器 -->
+<script is:inline src="/js/scrollAdjuster.js"></script>
+
 <script is:inline>
   new Swiper(".swiper-container", {
     loop: true,
@@ -130,4 +135,7 @@ const { images } = banner;
     slidesPerView: 1,
     allowTouchMove: true,
   });
+
+  // 初始化滚动调整器
+  initScrollAdjuster();
 </script>

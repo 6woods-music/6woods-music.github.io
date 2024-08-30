@@ -18,46 +18,108 @@ const { title, description, pricing_table, pricing_explanations } = pricing;
   </div>
 
   <div class="row mt-[30px] items-center">
-    <div class="col-8 mx-auto mb-10 text-center">
-      <table style="border-collapse: collapse; width: 100%; max-width: 1200px; margin: 0 auto; font-weight: bold;">
-        <tr>
-          {pricing_table.headers.map((header) => (
-            <th style="border: 2px solid black; padding: 8px; background-color: white;">{header}</th>
-          ))}
-        </tr>
-        {pricing_table.rows.map((row) => (
+    <div class="col-12 mx-auto mb-10 text-center">
+      <div class="table-wrapper">
+        <table class="pricing-table">
           <tr>
-            {row.map((cell) => (
-              <td style="border: 2px solid black; padding: 8px; background-color: white;">{cell}</td>
+            {pricing_table.headers.map((header) => (
+              <th>{header}</th>
             ))}
           </tr>
-        ))}
-      </table>
+          {pricing_table.rows.map((row) => (
+            <tr>
+              {row.map((cell) => (
+                <td>{cell}</td>
+              ))}
+            </tr>
+          ))}
+        </table>
+      </div>
 
-      <div class="explanation" style="max-width: 800px; margin: 20px auto; text-align: left; font-weight: normal; display: flex; flex-wrap: wrap;">
-        <div class="explanation-left" style="width: 50%;">
+      <div class="explanation">
+        <div class="explanation-left">
           {pricing_explanations.left.map((explanation) => (
             <p>{explanation}</p>
           ))}
         </div>
-        <div class="explanation-right" style="width: 50%;">
+        <div class="explanation-right">
           {pricing_explanations.right.map((explanation) => (
             <p>{explanation}</p>
           ))}
         </div>
       </div>
-
-      <style>
-        @media (max-width: 768px) {
-          .explanation {
-            flex-direction: column;
-          }
-          .explanation-left,
-          .explanation-right {
-            width: 100%;
-          }
-        }
-      </style>
     </div>
   </div>
 </section>
+
+<style>
+  .table-wrapper {
+    overflow-x: auto;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .pricing-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    border: 2px solid black;
+    padding: 8px;
+    background-color: white;
+  }
+
+  .explanation {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+    font-weight: normal;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .explanation-left,
+  .explanation-right {
+    width: 50%;
+    padding: 0 10px;
+  }
+
+  .explanation p {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .table-wrapper {
+      padding: 0 15px;
+    }
+
+    .pricing-table {
+      font-size: 14px;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+      padding: 6px;
+    }
+
+    .explanation {
+      flex-direction: column;
+      padding: 0 15px;
+    }
+
+    .explanation-left,
+    .explanation-right {
+      width: 100%;
+      padding: 0;
+    }
+
+    .explanation p {
+      width: 100%;
+    }
+  }
+</style>

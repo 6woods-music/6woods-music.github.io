@@ -2,8 +2,8 @@
 // src/pages/swiper.astro
 const { banner, url } = Astro.props;
 const { images } = banner;
-
 ---
+
 <style>
   /* 修改箭頭顏色為白色並加大 */
   .swiper-button-next,
@@ -25,54 +25,109 @@ const { images } = banner;
     width: 20px; /* 活动状态下的点点宽度 */
     height: 20px; /* 活动状态下的点点高度 */
   }
-  
+
   /* 通过root变量来设置颜色 */
   :root {
     --swiper-navigation-color: white;
     --swiper-pagination-color: white;
   }
+
+  .swiper-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+  }
+
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+  }
+
+  .swiper-wrapper-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* 设置高度为视口高度 */
+    overflow: hidden;
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination {
+    bottom: 20px !important;
+  }
+
+  /* 移动设备样式 */
+  @media (max-width: 768px) {
+    .swiper-wrapper-container {
+      height: auto;
+      padding-bottom: 56.25%; /* 16:9 高宽比，可以根据需要调整 */
+    }
+
+    .swiper-pagination {
+      bottom: 10px !important;
+    }
+  }
 </style>
 
+<div class="swiper-wrapper-container">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {
+        images.map((image, index) => (
+          <div class="swiper-slide" key={index}>
+            <img alt={`banner-${index}`} src={image.src} />
+          </div>
+        ))
+      }
+    </div>
 
-<div class="swiper-container">
-  <div class="swiper-wrapper">
-    {images.map((image, index) => (
-      <div class="swiper-slide" key={index}>
-        <img 
-          class="w-full object-cover"
-          alt={`banner-${index}`}
-          src={image.src} 
-        />
-      </div>
-    ))}
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
-
-  <!-- 如果需要分頁導航按鈕或圓點分頁，可以添加以下結構 -->
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
 </div>
 
 <!-- 引入 Swiper 的 CSS 文件 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 
 <!-- 引入 Swiper 的 JS 文件 -->
-<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-<!-- 初始化 Swiper -->
 <script is:inline>
-  new Swiper('.swiper-container', {
-    loop: true,  // 設置輪播循環
+  new Swiper(".swiper-container", {
+    loop: true,
     autoplay: {
-      delay: 3000,  // 自動播放延遲時間
+      delay: 3000,
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,  // 啟用點擊分頁
+      el: ".swiper-pagination",
+      clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',  // 下一頁按鈕
-      prevEl: '.swiper-button-prev',  // 上一頁按鈕
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
+    slidesPerView: 1,
+    allowTouchMove: true,
   });
 </script>

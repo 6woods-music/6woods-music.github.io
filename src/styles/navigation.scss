@@ -45,6 +45,19 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply text-center lg:text-left;
 }
 
+// .nav-link {
+//   @apply block p-3 py-2 text-[15px] text-dark transition hover:text-primary md:px-2 lg:inline-block;
+
+//   &.active {
+//     @apply relative;
+
+//     &::after {
+//       @apply absolute bottom-0 left-2 right-2 h-0.5 bg-gradient-to-tl content-[''];
+//     }
+//   }
+// }
+
+
 .nav-link {
   @apply block p-3 py-2 text-[15px] text-dark transition hover:text-primary md:px-2 lg:inline-block;
 
@@ -52,7 +65,7 @@ input#nav-toggle:checked ~ #nav-menu {
     @apply relative;
 
     &::after {
-      @apply absolute bottom-0 left-2 right-2 h-0.5 bg-gradient-to-tl content-[''];
+      @apply absolute bottom-0 left-2 right-2 h-0.5 bg-transparent content-[''];
     }
   }
 }

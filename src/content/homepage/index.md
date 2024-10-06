@@ -19,7 +19,7 @@ environment:
       image: "/images/environment/env-img-1.png"
     - title: 完美融合的教學與創作區域
       content: 教學空間與創作區域無縫結合，讓您在學習的同時可以即時創作和錄音，充分發揮您的音樂靈感。
-      image: "/images/environment/env-img-2.png"
+      image: "/images/environment/guitarimg.png"
     - title: 舒適的休息區與交流空間
       content: 我們的俱樂部提供寬敞的休息區，讓您在練習和創作之餘，能夠放鬆心情，並與其他音樂人交流心得。
       image: "/images/environment/env-img-3.png"

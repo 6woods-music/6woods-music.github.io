@@ -3,110 +3,99 @@ banner:
   title: "Scale design & dev operations with Avocode Enterprise"
   content: "A fully integrated suite of authentication & authoriz products, Stytch’s platform removes the headache of."
   images:
-    - src: /images/banner-img1.png
-    - src: /images/banner-img2.png
-    - src: /images/banner-img3.png
+    - src: /images/banner-img1.jpg
+    - src: /images/banner-img2.jpg
   button:
     label: Download The Theme
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
     enable: true
 
 environment:
-  title: 提供最完善的音樂俱樂部環境，<br /> 助您發揮音樂潛能
+  title: 業環境，享受音樂、放鬆身心，沉浸於質感生活
   list:
-    - title: 專業錄音設備與舒適空間
-      content: 我們的錄音室配備了先進的錄音設備，為您提供最佳的錄音體驗，無論是錄製專輯還是練習演奏，都能滿足您的需求。
+    - title: 全新音樂教室
+      content: 配備完善的爵士鼓、歌唱、吉他、鋼琴及練團空間，提供專業的學習環境，讓您專注於音樂的探索與成長
       image: "/images/environment/env-img-1.png"
-    - title: 完美融合的教學與創作區域
-      content: 教學空間與創作區域無縫結合，讓您在學習的同時可以即時創作和錄音，充分發揮您的音樂靈感。
+    - title: 休息區溫馨登
+      content: 提供舒適座椅、閱讀角落及輕音樂環境，營造寧靜放鬆的空間，讓您在課程間歇沉澱心情，享受片刻悠閒。
       image: "/images/environment/guitarimg.png"
-    - title: 舒適的休息區與交流空間
-      content: 我們的俱樂部提供寬敞的休息區，讓您在練習和創作之餘，能夠放鬆心情，並與其他音樂人交流心得。
+    - title: 吧檯區域精心設計 
+      content: 香醇手沖咖啡與蛋糕，為您提供一處輕鬆的享食空間，讓您在音樂之旅中隨時放鬆、愜意品味。
       image: "/images/environment/env-img-3.png"
-
 
 ##key features
 key_features:
   title: "教學特色"
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  description: "提供從基礎到進階，涵蓋樂器演奏、音樂創作、音樂製作、團隊合作等領域，滿足不同年齡層和需求。我們致力於創造一個無壓力的學習環境，讓會員能夠以放鬆的心態享受音樂的樂趣。"
   feature_list:
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    - icon: "music"
+      title: "多元課程選擇"
+      content: "提供從基礎到進階，涵蓋樂器演奏、音樂創作、音樂製作、團隊合作等領域，滿足不同年齡層和需求。"
+    - icon: "users"
+      title: "學習樂團組成"
+      content: "設置樂團合作的課程，讓會員在專業指導下體驗組樂團的過程，從排練到公開表演，充滿實戰性。"
+    - icon: "mic"
+      title: "音樂創作和錄音課程"
+      content: "教授音樂製作和錄音技術，讓會員能夠創作、錄製並發布自己的音樂作品，實現創作夢想。"
+    - icon: "users"
+      title: "精緻化團體培訓"
+      content: "在小團隊中，會員可以彼此分享學習心得、互相鼓勵，形成良好的學習氛圍，提升整體學習效果。"
+    - icon: "smile"
+      title: "無壓力學習"
+      content: "設計強調無壓力的學習環境，目的是讓會員能夠以放鬆的心態享受音樂的樂趣。"
+    - icon: "clock"
+      title: "時間彈性"
+      content: "讓會員可以根據自己的時間表靈活安排課程。無論是週末、平日晚上，還是特定的時段，我們都有相應的培訓內容。"
 
 #service
 service:
-  title: 俱樂部特色
-  description:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  title: "聚樂部特色"
+  description: "提供從基礎到進階，涵蓋樂器演奏、音樂創作、音樂製作、團隊合作等領域，滿足不同年齡層和需求。我們致力於創造一個無壓力的學習環境，讓會員能夠以放鬆的心態享受音樂的樂趣。"
   homepage_tab:
-    title: 多元選擇、大師講座
-    description: Our platform helps you build secure onboarding authentication experiences that retain and engage your users. We build the infrastructure, you can.
+    title: "六大教學特色"
+    description: "我們提供多元化的音樂教育體驗，從個人技能培養到團體合作，全方位打造您的音樂夢想。"
     tab_list:
-        - title: Habit building essential choose habit
-          icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-          image: "/images/sells-by-country.png"
-        - title: Get an overview of Habit Calendars.
-          icon: "clock"  #icon package react-feather-icon [https://feathericons.com/]
-          image: "/images/collaboration.png"
-        - title: Start building with Habitify platform
-          icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-          image: "/images/sells-by-country.png"
+      - title: "多元課程選擇"
+        icon: "music"
+        image: "/images/sells-by-country.png"
+      - title: "學習樂團組成"
+        icon: "users"
+        image: "/images/collaboration.png"
+      - title: "音樂創作和錄音課程"
+        icon: "mic"
+        image: "/images/sells-by-country.png"
 
   our_service:
-      - title: 多元選擇、大師講座
-        description: 提供多種選擇及專業大師講座，讓您在音樂領域中更進一步。
-        image: "/images/music_room.png"
-        list:
-          - 提供不同音樂風格的課程選擇
-          - 定期邀請業界大師進行專題講座
-          - 小班制教學，確保每位學員的學習效果
-      - title: 同樣費用、數倍課量
-        description: 我們以相同的費用提供更多的課程內容，讓您學習更有效率。
-        image: "/images/music_course.png"
-      - title: 標準化數位課程設計
-        description: 提供標準化的數位課程設計，讓您更輕鬆學習。
-        image: "/images/music_room.png"
-        list:
-          - 課程內容清晰有條理，易於理解
-          - 課程設計符合現代音樂教育的標準
-          - 提供可下載的課程資料供隨時複習
-      - title: 資深業界專業人士
-        description: 我們的團隊由資深業界專業人士組成，為您提供最專業的教學內容。
-        video:
-          thumbnail: "/images/intro-thumbnail.png"
-          video_id: "g3-VxLQO7do"
-        button:
-          label: 了解我們
-          link: "#"
-          enable: true
-
+    - title: "特邀大師講座"
+      description: "不定期邀請知名音樂人、製作人舉辦講座，讓會員學習和接觸到業界專家的指導與資訊。"
+      image: "/images/music_room.png"
+      list:
+        - "知名音樂人親自指導"
+        - "業界最新趨勢分享"
+        - "實戰經驗交流討論"
+    - title: "精緻化團體培訓"
+      description: "在小團隊中，會員可以彼此分享學習心得、互相鼓勵，形成良好的學習氛圍，提升整體學習效果。"
+      image: "/images/music_course.png"
+      list:
+        - "小班制教學確保品質"
+        - "團體互動學習"
+        - "個別指導時間充足"
+    - title: "音樂俱樂部生活風格"
+      description: "不僅提供音樂學習，也注重生活品質，設有休閒區、咖啡區，讓會員可以在輕鬆的氛圍中學習和交流。"
+      image: "/images/music_room.png"
+      list:
+        - "所有樂器一次滿足"
+        - "休閒交流區域"
+        - "會員超高CP值練習空間租用"
+    - title: "會員專屬活動"
+      description: "定期舉辦會員專屬的音樂會、創作分享等，讓會員之間交流學習心得，拓展社交圈。"
+      video:
+        thumbnail: "/images/intro-thumbnail.png"
+        video_id: "g3-VxLQO7do"
+      button:
+        label: "了解更多"
+        link: "#"
+        enable: true
 #testimonial
 testimonial:
   title: 師資介紹
@@ -157,7 +146,6 @@ testimonial:
       organization: meta limited
       rating: five
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-
 
 
 pricing:

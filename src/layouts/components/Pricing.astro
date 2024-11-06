@@ -37,13 +37,8 @@ const { title, description, pricing_table, pricing_explanations } = pricing;
       </div>
 
       <div class="explanation">
-        <div class="explanation-left">
-          {pricing_explanations.left.map((explanation) => (
-            <p>{explanation}</p>
-          ))}
-        </div>
-        <div class="explanation-right">
-          {pricing_explanations.right.map((explanation) => (
+        <div class="explanation-content">
+          {pricing_explanations.map((explanation) => (
             <p>{explanation}</p>
           ))}
         </div>
@@ -77,16 +72,12 @@ const { title, description, pricing_table, pricing_explanations } = pricing;
   .explanation {
     max-width: 800px;
     margin: 20px auto;
-    text-align: left;
-    font-weight: normal;
-    display: flex;
-    flex-wrap: wrap;
   }
 
-  .explanation-left,
-  .explanation-right {
-    width: 50%;
-    padding: 0 10px;
+  .explanation-content {
+    text-align: left;
+    display: inline-block;
+    width: 100%;
   }
 
   .explanation p {
@@ -108,18 +99,7 @@ const { title, description, pricing_table, pricing_explanations } = pricing;
     }
 
     .explanation {
-      flex-direction: column;
       padding: 0 15px;
-    }
-
-    .explanation-left,
-    .explanation-right {
-      width: 100%;
-      padding: 0;
-    }
-
-    .explanation p {
-      width: 100%;
     }
   }
 </style>

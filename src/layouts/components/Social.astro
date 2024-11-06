@@ -34,6 +34,7 @@ import {
   IoLogoYoutube,
   IoMail,
 } from "react-icons/io5";
+import { FaLine } from "react-icons/fa";
 
 const {
   facebook,
@@ -67,6 +68,7 @@ const {
   address,
   skype,
   website,
+  line,
 } = source;
 ---
 
@@ -491,6 +493,20 @@ const {
           rel="noopener noreferrer nofollow"
         >
           <IoLocation />
+        </a>
+      </li>
+    )
+  }
+  {
+    line && (
+      <li class="inline-block">
+        <a
+          aria-label="line"
+          href={line}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+        >
+          <FaLine />
         </a>
       </li>
     )

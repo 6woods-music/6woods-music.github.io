@@ -15,13 +15,13 @@ environment:
   list:
     - title: 全新音樂教室
       content: 配備完善的爵士鼓、歌唱、吉他、鋼琴及練團空間，提供專業的學習環境，讓您專注於音樂的探索與成長
-      image: "/images/environment/env-img-1.png"
-    - title: 休息區溫馨登
+      image: "/images/environment/env-img-1.jpg"
+    - title: 休息區溫馨登場
       content: 提供舒適座椅、閱讀角落及輕音樂環境，營造寧靜放鬆的空間，讓您在課程間歇沉澱心情，享受片刻悠閒。
-      image: "/images/environment/guitarimg.png"
+      image: "/images/environment/env-img-2.jpg"
     - title: 吧檯區域精心設計 
       content: 香醇手沖咖啡與蛋糕，為您提供一處輕鬆的享食空間，讓您在音樂之旅中隨時放鬆、愜意品味。
-      image: "/images/environment/env-img-3.png"
+      image: "/images/environment/env-img-3.jpg"
 
 ##key features
 key_features:
@@ -89,13 +89,14 @@ service:
         - "會員超高CP值練習空間租用"
     - title: "會員專屬活動"
       description: "定期舉辦會員專屬的音樂會、創作分享等，讓會員之間交流學習心得，拓展社交圈。"
-      video:
-        thumbnail: "/images/intro-thumbnail.png"
-        video_id: "g3-VxLQO7do"
-      button:
-        label: "了解更多"
-        link: "#"
-        enable: true
+      image: "/images/group_photo.jpg"
+      # video:
+      #   thumbnail: "/images/intro-thumbnail.png"
+      #   video_id: "g3-VxLQO7do"
+      # button:
+      #   label: "了解更多"
+      #   link: "#"
+      #   enable: true
 #testimonial
 testimonial:
   title: 師資介紹
@@ -146,8 +147,6 @@ testimonial:
       organization: meta limited
       rating: five
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-
-
 pricing:
   title: "定價方案"
   description: "選擇適合你的會員方案"
@@ -155,22 +154,16 @@ pricing:
     headers:
       - "購買單月點數"
       - "每月點數"
-      - "會費定價(1個月)"
+      - "會費定價(1個月)" 
       - "3個月"
       - "6個月"
       - "12個月"
     rows:
-      - ["初階會員", "36點", "3600", "3088", "2888", "2788"]
-      - ["高級會員", "42點", "3900", "3188", "3088", "2988"]
-      - ["深度會員", "48點", "4200", "3288", "3188", "3088"]
+      - ["樹苗會員", "36點", "3600", "3088", "2888", "2788"]
+      - ["小樹會員", "42點", "4200", "3188", "3088", "2988"]
+      - ["大樹會員", "48點", "4500", "3288", "3188", "3088"]
   pricing_explanations:
-    left:
-      - "初階會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX"
-      - "高級會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX"
-      - "深度會員：享有XXXXXXXXXXXXXXXXXXXXXXXXXX"
-    right:
-      - "其他說明：XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-      - "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-
-
+    - 生活方案：10點 666元
+    - 點數一次購：300點 19600元、600點 36600元
+    - 一年期限，可使用吧台與教室租用
 ---

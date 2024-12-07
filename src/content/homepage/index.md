@@ -68,21 +68,21 @@ service:
   our_service:
     - title: "特邀大師講座"
       description: "不定期邀請知名音樂人、製作人舉辦講座，讓會員學習和接觸到業界專家的指導與資訊。"
-      image: "/images/music_room.png"
+      # image: "/images/music_room.png"
       list:
         - "知名音樂人親自指導"
         - "業界最新趨勢分享"
         - "實戰經驗交流討論"
     - title: "精緻化團體培訓"
       description: "在小團隊中，會員可以彼此分享學習心得、互相鼓勵，形成良好的學習氛圍，提升整體學習效果。"
-      image: "/images/music_course.png"
+      # image: "/images/music_course.png"
       list:
         - "小班制教學確保品質"
         - "團體互動學習"
         - "個別指導時間充足"
     - title: "音樂俱樂部生活風格"
       description: "不僅提供音樂學習，也注重生活品質，設有休閒區、咖啡區，讓會員可以在輕鬆的氛圍中學習和交流。"
-      image: "/images/music_room.png"
+      # image: "/images/music_room.png"
       list:
         - "所有樂器一次滿足"
         - "休閒交流區域"
@@ -102,51 +102,51 @@ testimonial:
   title: 師資介紹
   description: 
   testimonial_list:
-    - author: David Cameron
-      avatar: "/images/users/user-5.png"
-      organization: meta limited
-      rating: four
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-6.png"
-      organization: meta limited
-      rating: four
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-2.png"
-      organization: meta limited
-      rating: three
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-3.png"
-      organization: meta limited
-      rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-4.png"
-      organization: meta limited
-      rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+    - author: 鄭可強
       avatar: "/images/users/user-1.png"
-      organization: meta limited
+      organization: 流行唱歌
       rating: three
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-5.png"
-      organization: meta limited
+      content: 聲林之王第一季-第五名。電影{可不可以你也剛好喜歡我}插曲。500+學生教學經驗
+    - author: 劉學甫
+      avatar: "/images/users/user-2.png"
+      organization: 吉他、詞曲創作
+      rating: three
+      content: 15年教學經驗。麥香廣告主題曲 - 麥 My dear friends。截至2024年共發行19首原創作品
+    - author: 鄧韶宣
+      avatar: "/images/users/user-3.png"
+      organization: 流行鋼琴、爵士鼓
       rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-5.png"
-      organization: meta limited
+      content: 9年教學經驗。擔任多位歌手現場演唱會。音樂總監&鋼琴手
+    - author: 張勝豐
+      avatar: "/images/users/user-4.png"
+      organization: 吉他
       rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+      content: 新竹十年吉他教學經驗。教授超過300位學生。擅長FINGERSTYLE指彈風格
+    - author: 劉維哲
       avatar: "/images/users/user-5.png"
-      organization: meta limited
-      rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
+      organization: 流行鋼琴
+      rating: four
+      content: 中原五燈獎第三名。政大金弦獎。星火原創第一名
+    - author: 崴澤
+      avatar: "/images/users/user-6.png"
+      organization: 爵士鼓
+      rating: four
+      content: 中國科技大學熱音社指導老師。中國科技大學聖誕演唱會 FT. HARRY黑瑞 /W告五人
+    - author: 鄧韶宇
+      avatar: "/images/users/user-7.png"
+      organization: 爵士鼓
+      rating: four
+      content: 三立電視夏戀嘉年華。三立電視花蓮太平洋觀光。跨年演唱會
+    - author: 邱彥均
+      avatar: "/images/users/user-8.png"
+      organization: 電吉他、木吉他
+      rating: four
+      content: 2022新竹區亞洲盃國際音樂大賽 電吉他社青組 冠軍。2022全國亞洲盃最強吉他爭霸賽 社青組 亞軍。
+    - author: 小愛老師
+      avatar: "/images/users/user-9.png"
+      organization: 流行歌唱
+      rating: four
+      content: 企業商業演出近百場。校園歌唱比賽常勝軍。曾任海葵音樂簽約歌手。至今已發行10首個人單曲
 pricing:
   title: "定價方案"
   description: "選擇適合你的會員方案"

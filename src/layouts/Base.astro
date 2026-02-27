@@ -45,6 +45,14 @@ const { title, meta_title, description, image, noindex, canonical } =
   <head>
     <!-- favicon -->
     <link rel="shortcut icon" href={config.site.favicon} />
+    <!-- Google tag (gtag.js) -->
+    <script is:inline src="https://www.googletagmanager.com/gtag/js?id=AW-11535725146" async></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11535725146');
+    </script>
     <!-- theme meta -->
     <meta name="theme-name" content="6WOODS-MUSIC" />
     <meta name="msapplication-TileColor" content="#000000" />

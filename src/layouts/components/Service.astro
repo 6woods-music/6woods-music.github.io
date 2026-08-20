@@ -31,7 +31,7 @@ const { homepage_tab, our_service, title, description } = service;
                   <div class="relative">
                     <Image
                       class="w-full object-contain"
-                      alt="service"
+                      alt={item.alt || item.title}
                       width={667}
                       height={498}
                       src={item.image}

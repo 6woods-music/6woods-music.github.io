@@ -10,10 +10,12 @@ import Cta from "@/layouts/partials/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 
 const homepage = await getEntryBySlug("homepage", "index");
-const { banner, environment, key_features, service, testimonial, pricing} = homepage.data;
+const { title, description, banner, environment, key_features, service, testimonial, pricing} = homepage.data;
 ---
 
-<Base>
+<Base title={title} description={description}>
+  <!-- 讓 Google／螢幕閱讀器讀得到頁面主標題，但畫面上不顯示，維持現有版面 -->
+  <h1 class="sr-only">{title}</h1>
   <!-- banner -->
   <Banner banner={banner} />
   <!-- enviroment -->

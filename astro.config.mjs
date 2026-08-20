@@ -18,7 +18,23 @@ export default defineConfig({
   },
   integrations: [
     react(),
-    sitemap(),
+    sitemap({
+      // 排除模板遺留、未在導覽選單中使用的頁面，避免被 Google 收錄稀釋 SEO
+      filter: (page) =>
+        ![
+          "/pricing",
+          "/how-it-works",
+          "/signin",
+          "/signup",
+          "/changelog",
+          "/about",
+          "/contact",
+          "/terms-and-conditions",
+        ].some((path) => page === `${config.site.base_url}${path.slice(1)}`) &&
+        !["/career", "/integrations", "/blog", "/categories"].some((path) =>
+          page.startsWith(`${config.site.base_url}${path.slice(1)}`),
+        ),
+    }),
     tailwind({
       config: {
         applyBaseStyles: false,

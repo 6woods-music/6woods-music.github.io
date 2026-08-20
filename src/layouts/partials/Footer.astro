@@ -17,9 +17,11 @@ const { copyright, location, email, phone, footer_description } = config.params;
         <div class="logo-wrapper">
           <Logo />
         </div>
-        <p class="mt-6 footer-description">
-          {footer_description}
-        </p>
+        {footer_description && (
+          <p class="mt-6 footer-description">
+            {footer_description}
+          </p>
+        )}
       </div>
       <div class="footer-column col-12 mt-12 md:col-4 lg:col-4">
         <h6>Socials</h6>

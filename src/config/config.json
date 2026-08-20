@@ -34,7 +34,7 @@
   },
 
   "params": {
-    "footer_description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "footer_description": "",
     "email": "6woods.hsinchu@gmail.com",
     "location": "新竹市東區介壽一路23號",
     "phone": "(03) 666-1720",
@@ -45,6 +45,6 @@
   "metadata": {
     "meta_author": "6WOODS",
     "meta_image": "/images/og-image.jpg",
-    "meta_description": "6WOODS MUSIC"
+    "meta_description": "6WOODS 音樂俱樂部｜新竹音樂教室，提供爵士鼓、吉他、鋼琴、歌唱等多元音樂課程與練團空間租用。"
   }
 }

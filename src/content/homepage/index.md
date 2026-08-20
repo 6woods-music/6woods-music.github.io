@@ -1,10 +1,15 @@
 ---
+title: "6WOODS 音樂俱樂部｜新竹音樂教室・爵士鼓/吉他/鋼琴/歌唱課程"
+description: "新竹音樂教室 6WOODS 音樂俱樂部，提供爵士鼓、吉他、鋼琴、歌唱等多元音樂課程，小班制無壓力教學環境，並設有休息區與吧檯，會員可彈性租用練團空間。"
+
 banner:
   title: "Scale design & dev operations with Avocode Enterprise"
   content: "A fully integrated suite of authentication & authoriz products, Stytch’s platform removes the headache of."
   images:
     - src: /images/banner-img1.jpg
+      alt: "6WOODS 音樂俱樂部新竹音樂教室吧檯交誼空間"
     - src: /images/banner-img2.jpg
+      alt: "6WOODS 音樂俱樂部新竹音樂教室休息區與吉他展示區"
   button:
     label: Download The Theme
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
@@ -16,12 +21,15 @@ environment:
     - title: 全新音樂教室
       content: 配備完善的爵士鼓、歌唱、吉他、鋼琴及練團空間，提供專業的學習環境，讓您專注於音樂的探索與成長
       image: "/images/environment/env-img-1.jpg"
+      alt: "6WOODS 新竹音樂教室走廊，配備多項專業樂器設備，並設有獨立琴房供學員練習"
     - title: 休息區溫馨登場
       content: 提供舒適座椅、閱讀角落及輕音樂環境，營造寧靜放鬆的空間，讓您在課程間歇沉澱心情，享受片刻悠閒。
       image: "/images/environment/env-img-2.jpg"
+      alt: "6WOODS 音樂教室溫馨休息交流區，木質吧檯搭配品牌牆，營造放鬆自在的氛圍"
     - title: 吧檯區域精心設計 
       content: 香醇手沖咖啡與蛋糕，為您提供一處輕鬆的享食空間，讓您在音樂之旅中隨時放鬆、愜意品味。
       image: "/images/environment/env-img-3.jpg"
+      alt: "6WOODS 音樂教室吧檯區，提供手沖咖啡與點心，打造課間輕鬆享食的空間"
 
 ##key features
 key_features:
@@ -90,6 +98,7 @@ service:
     - title: "會員專屬活動"
       description: "定期舉辦會員專屬的音樂會、創作分享等，讓會員之間交流學習心得，拓展社交圈。"
       image: "/images/group_photo.jpg"
+      alt: "6WOODS 音樂俱樂部會員大合照，定期舉辦成果發表會與休閒活動熱鬧會員社群"
       # video:
       #   thumbnail: "/images/intro-thumbnail.png"
       #   video_id: "g3-VxLQO7do"

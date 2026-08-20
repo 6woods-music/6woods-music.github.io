@@ -38,6 +38,9 @@ export interface Props {
 // distructure frontmatters
 const { title, meta_title, description, image, noindex, canonical } =
   Astro.props;
+
+// base_url 結尾已經有 "/"，這裡先去掉，避免跟 pathname/image 開頭的 "/" 拼出雙斜線
+const siteUrl = config.site.base_url.replace(/\/$/, "");
 ---
 
 <!doctype html>
@@ -52,6 +55,27 @@ const { title, meta_title, description, image, noindex, canonical } =
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-11535725146');
+
+      // CTA 轉換追蹤：Instagram / LINE 按鈕點擊（見 Header.astro、Social.astro 的 onclick）
+      function gtagReportConversion(sendTo, url, newTab) {
+        var navigated = false;
+        var callback = function () {
+          if (navigated || typeof url === 'undefined') return;
+          navigated = true;
+          if (newTab) {
+            window.open(url, '_blank', 'noopener,noreferrer');
+          } else {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          send_to: sendTo,
+          event_callback: callback,
+        });
+        // 若 gtag 被封鎖導致 callback 沒被呼叫，還是要讓連結能正常導向
+        setTimeout(callback, 1000);
+        return false;
+      }
     </script>
     <!-- theme meta -->
     <meta name="theme-name" content="6WOODS-MUSIC" />
@@ -141,7 +165,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
+      content={`${siteUrl}${Astro.url.pathname}`}
     />
 
     <!-- twitter-title -->
@@ -163,7 +187,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <!-- og-image -->
     <meta
       property="og:image"
-      content={`${config.site.base_url}${
+      content={`${siteUrl}${
         image ? image : config.metadata.meta_image
       }`}
     />
@@ -171,7 +195,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <!-- twitter-image -->
     <meta
       name="twitter:image"
-      content={`${config.site.base_url}${
+      content={`${siteUrl}${
         image ? image : config.metadata.meta_image
       }`}
     />

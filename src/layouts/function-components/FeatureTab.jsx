@@ -20,7 +20,7 @@ const FeatureTab = ({ feature_tab }) => {
               tab === index ? "active" : undefined
             } relative`}
           >
-            <img className="w-[80%] object-contain mx-auto" src={item.image} />
+            <img className="w-[80%] object-contain mx-auto" src={item.image} alt={item.alt} />
           </div>
         ))}
       </div>

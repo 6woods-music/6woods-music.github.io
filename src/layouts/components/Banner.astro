@@ -93,7 +93,7 @@ const { images } = banner;
       {
         images.map((image, index) => (
           <div class="swiper-slide" key={index}>
-            <img alt={`banner-${index}`} src={image.src} />
+            <img alt={image.alt} src={image.src} />
           </div>
         ))
       }

@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "6WOODS",
-    "base_url": "https://6woods-music.github.io/",
+    "base_url": "https://6woods.tw/",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -22,7 +22,7 @@
     "description": "Discover the perfect blend of creativity and expertise with our tailored music courses and professional guidance.",
     "button": {
       "label": "Explore Our Courses",
-      "link": "https://6woods-music.github.io/"
+      "link": "https://6woods.tw/"
     }
   },
 
